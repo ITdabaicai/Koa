@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<% include public/header.ejs%>
+
+<ul>
+    <%for(var i=0;i<list.length;i++){%>
+        <li><%=list[i]%></li>
+    <%}%>
+</ul>
+<%-content%>
+<%if(num>24){%>
+    大于24
+<%}else{%>
+    小于24
+<%}%>
+<h2><%=userinfo%></h2>
+<br/>
+<br/>
+</body>
+</html>
